@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+for i in {13..39..1}
+do
+for mer in {5..5..1}
+do  
+               
+         qsub run_classifier2.sh $mer $i 'after_MC'
+
+done
+done

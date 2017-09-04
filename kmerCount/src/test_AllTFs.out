@@ -1,0 +1,9 @@
+> library(ROCR);
+> currPreds <- read.table("/data/ohler/Dina/Drosophila/Research/results/MarkovChain_classification/before_MC/tempProcessingFiles/cvTest_AllTFs.preds", header = TRUE);
+> attach(currPreds);
+> pred <- prediction(currPreds$predictions,currPreds$labels);
+> perf <- performance(pred,"auc");
+> auROC <- perf@y.values[[1]];
+> write(auROC,file = "/data/ohler/Dina/Drosophila/Research/results/MarkovChain_classification/before_MC/tempProcessingFiles/currCV_AllTFs.ROC",ncolumns = 1);
+> 
+> 

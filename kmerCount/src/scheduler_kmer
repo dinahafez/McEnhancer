@@ -1,0 +1,20 @@
+#!/bin/bash
+
+for j in {5..8..1}
+do
+#for i in {11..39..1}
+# do
+  
+    
+
+    inputDir="/data/ohler/Dina/Drosophila/Research/results/MarkovChain_3order/";
+     inputDir="/data/ohler/Dina/Drosophila/Research/data/ClustersDHS/";
+    #seqFile="all_pos_not_"$i"_single"; 
+    #seqFile=$i"_pos_single"; 
+      seqFile="ubiquitous_single"; 
+    outputDir="/data/ohler/Dina/Drosophila/Research/results/MarkovChain_3order/"
+    kmer=$j;
+
+    qsub run_kmer.sh $inputDir $seqFile $outputDir $kmer 
+#done
+done

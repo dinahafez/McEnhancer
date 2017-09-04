@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+for i in {12..39..1}
+do
+for mer in {5..5..1}
+do  
+               
+        python cvClassifierROC.py $mer $i 
+
+done
+done
