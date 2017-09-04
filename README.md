@@ -1,9 +1,12 @@
 # McEnhancer
 Source code and results for McEnhancer: Predicting gene expression via semi-supervised assignment of enhancers to  target genes
 
+This software is distributed under the open-source MIT License.
+
  
 	 
-This is the Readme file for running McEnhancer.
+This is the Readme file for running McEnhancer. All results are available at https://ohlerlab.mdc-berlin.de/software/McEnhancer_134/
+
 
 Data:
 
